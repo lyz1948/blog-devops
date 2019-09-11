@@ -13,4 +13,9 @@ git checkout master
 echo "changing permissions..."
 chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH
 chmod -R 777 $WEB_PATH
+sudo pm2 stop blog-admin
+sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
+npm run build
+sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
+sudo pm2 restart blog-admin
 echo "Finished."

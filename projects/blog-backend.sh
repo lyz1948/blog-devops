@@ -17,7 +17,7 @@ sudo pm2 stop ykpine.com
 pm2 stop blog-backend
 sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
 rm -rf ./dist/*
-npm run build
+npm run build -- --dbport=24680
 sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
 pm2 restart blog-backend
 sudo pm2 restart ykpine.com

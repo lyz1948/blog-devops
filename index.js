@@ -13,7 +13,6 @@ const deployHandler = require('./utils/deploy')
 
 http.createServer((req, res) => {
   handler(req, res, _ => {
-    console.log(req.url)
     if (req.url !== PROJECT_PATH) {
       res.writeHead(200, {
         'Content-Type': 'text/html',
