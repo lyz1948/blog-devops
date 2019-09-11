@@ -1,13 +1,15 @@
 {
   "name": "run.ykpine.com",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "pm2.config.js",
   "repository": "git@github.com:lyz1948/run.ykpine.com.git",
   "author": "lyz1948 <22980937@qq.com>",
   "license": "MIT",
   "dependencies": {
     "consola": "^2.10.1",
+    "env2": "^2.2.2",
     "github-webhook-handler": "^0.7.1",
+    "global": "^4.4.0",
     "pm2": "^3.5.1",
     "shelljs": "^0.8.3"
   }
