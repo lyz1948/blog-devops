@@ -1,6 +1,6 @@
 const PROJECT_PATH = '/deploy'
 const SECRET_KEY = 'ykpine.blog'
-const PORT = process.env.PORT || 5380
+const PORT = 5380
 
 const http = require('http')
 const fs = require('fs')
@@ -12,7 +12,8 @@ const html = fs.readFileSync('index.html')
 const deployHandler = require('./utils/deploy')
 
 http.createServer((req, res) => {
-  handler((req, res, err) => {
+  handler(req, res, _ => {
+    console.log(req.url)
     if (req.url !== PROJECT_PATH) {
       res.writeHead(200, {
         'Content-Type': 'text/html',
