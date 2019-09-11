@@ -5,6 +5,9 @@
   "repository": "git@github.com:lyz1948/run.ykpine.com.git",
   "author": "lyz1948 <22980937@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy": "pm2-runtime start ecosystem.config.js --env production"
+  },
   "dependencies": {
     "consola": "^2.10.1",
     "env2": "^2.2.2",
