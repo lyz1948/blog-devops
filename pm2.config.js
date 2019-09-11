@@ -20,7 +20,7 @@ module.exports = {
   ],
   deploy: {
     "production": {
-      "user": env.UAER, // 服务器上发布应用的user
+      "user": env.USER, // 服务器上发布应用的user
       "host": [env.HOST], // 可用配置多个服务ip
       "port" : env.PORT,  // 端口号
       "ref": "origin/master",

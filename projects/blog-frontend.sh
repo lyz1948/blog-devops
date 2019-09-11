@@ -1,6 +1,6 @@
 #!/bin/bash
  
-WEB_PATH='/usr/local/wwwroot/blog-frontend'
+WEB_PATH='/wwwroot/blog-frontend'
 WEB_USER='root'
 WEB_USERGROUP='root'
  

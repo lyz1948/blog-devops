@@ -1,6 +1,6 @@
 #!/bin/bash
  
-WEB_PATH='/usr/local/wwwroot/run.ykpine.com'
+WEB_PATH='/wwwroot/run.ykpine.com'
 WEB_USER='root'
 WEB_USERGROUP='root'
  
