@@ -14,8 +14,8 @@ module.exports = {
         "--dbbackup_qiniu_secretKey=" + env.QINIU_SK,
         "--dbbackup_qiniu_bucket=" + env.QINIU_BUCKET
       ],
-      error_file: "/usr/local/wwwlogs/run.ykpine.com/error.log",
-      out_file: "/usr/local/wwwlogs/run.ykpine.com/out.log"
+      error_file: "/wwwlogs/run.ykpine.com/error.log",
+      out_file: "/wwwlogs/run.ykpine.com/out.log"
     }
   ],
   deploy: {
