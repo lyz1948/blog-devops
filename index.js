@@ -1,6 +1,6 @@
 const PROJECT_PATH = '/deploy'
 const SECRET_KEY = 'ykpine.blog'
-const PORT = 5380
+const PORT = 3000
 
 const http = require('http')
 const fs = require('fs')

@@ -1,6 +1,6 @@
 #!/bin/bash
  
-WEB_PATH='/wwwroot/run.ykpine.com'
+WEB_PATH='/wwwroot/blog-devops'
 WEB_USER='root'
 WEB_USERGROUP='root'
  

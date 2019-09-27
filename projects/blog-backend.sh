@@ -13,12 +13,12 @@ git checkout master
 echo "changing permissions..."
 chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH
 chmod -R 777 $WEB_PATH
-sudo pm2 stop ykpine.com
+sudo pm2 stop blog-devops
 pm2 stop blog-backend
 sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
 rm -rf ./dist/*
-npm run build -- --dbport=24680
+npm run build --dbport=24680
 sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
 pm2 restart blog-backend
-sudo pm2 restart ykpine.com
+sudo pm2 restart blog-devops
 echo "Finished."

@@ -1,6 +1,6 @@
 const shell = require('shelljs')
 const consola = require('consola')
-const projects = ['blog-backend', 'blog-frontend', 'blog-admin', 'run.ykpine.com']
+const projects = ['blog-backend', 'blog-frontend', 'blog-admin', 'blog-devops']
 
 module.exports = (event, action) => {
   const branch = event.payload.ref
