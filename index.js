@@ -13,14 +13,14 @@ const deployHandler = require('./utils/deploy')
 
 http.createServer((req, res) => {
   handler(req, res, _ => {
-    if (req.url !== PROJECT_PATH) {
-      res.writeHead(200, {
-        'Content-Type': 'text/html',
-        'Content-Length': html.length
-      })
-      res.write(html)
+    if (req.url === PROJECT_PATH) {
+      // res.writeHead(200, {
+      //   'Content-Type': 'text/html',
+      //   'Content-Length': html.length
+      // })
+      // res.write(html)
+      res.end()
     }
-    res.end()
   })
 }).listen(PORT, () => {
   consola.ready(`service is running at port ${PORT}`, new Date())
