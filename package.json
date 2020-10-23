@@ -6,7 +6,7 @@
   "author": "lyz1948 <22980937@qq.com>",
   "license": "MIT",
   "scripts": {
-    "deploy": "pm2-runtime start ecosystem.config.js --env production"
+    "deploy": "pm2-runtime start ecosystem.json --env production"
   },
   "dependencies": {
     "consola": "^2.10.1",

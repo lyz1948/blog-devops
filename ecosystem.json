@@ -1,0 +1,39 @@
+{
+  "apps": [
+    {
+      "name": "blog-devops",
+
+      "script": "index.js",
+
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+
+  "deploy": {
+    "production": {
+      "user": "ykpine",
+
+      "host": ["39.99.210.175"],
+
+      "port": "27882",
+
+      "ref": "origin/master",
+
+      "repo": "git@github.com:lyz1948/blog-devops.git",
+
+      "path": "/wwwroot/blog-devops/production",
+
+      "ssh_options": "StrictHostKeyChecking=no",
+
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
